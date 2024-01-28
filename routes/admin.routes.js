@@ -35,11 +35,11 @@
  *           example: 123456789
  *         province:
  *           type: string
- *           description: Province of the veterinary
+ *           description: Province were veterinary is located
  *           example: prov1
  *         district:
  *           type: string
- *           description: District of the veterinary
+ *           description: District were the veterinary is located
  *           example: distr1
  */
 
@@ -50,7 +50,7 @@
  *     description: The farmer managing API
  * /mpas/veterian/vet/allVets:
  *   get:
- *     summary: List of all veterinaries
+ *     summary: List of all veterinaries is found here
  *     tags:
  *       - Veterinary
  *     responses:
@@ -78,22 +78,22 @@
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/Veterinary'  # Corrected schema reference to match the case
+ *             $ref: '#/components/schemas/Veterinary'  
  *     responses:
  *       200:
  *         description: This Veterinary is created
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Veterinary'  # Corrected schema reference to match the case
+ *               $ref: '#/components/schemas/Veterinary'  
  *       500:
- *         description: Some server error
+ *         description: Some server error has occured
  */
 /**
  * @swagger
  * /mpas/veterian/vet/updateVet:
  *   patch:
- *     summary: Update veterinarian
+ *     summary: Update veterinary
  *     tags:
  *       - Veterinary
  *     parameters:
@@ -106,14 +106,14 @@
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/Veterinary'  # Corrected schema reference to match the case
+ *             $ref: '#/components/schemas/Veterinary'  
  *     responses:
  *       '200':
  *         description: Veterinarian updated successfully
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Veterinary'  # Corrected schema reference to match the case
+ *               $ref: '#/components/schemas/Veterinary'  
  *       '500':
  *         description: Some server error
  *       '400':
@@ -163,7 +163,7 @@
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Veterinary'  # Corrected schema reference to match the case
+ *               $ref: '#/components/schemas/Veterinary'  
  *       '500':
  *         description: Some server error
  *       '400':
