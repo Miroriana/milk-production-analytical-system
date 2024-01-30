@@ -23,7 +23,7 @@ const { errorHandler } = require("./utility/errorHandlerClass");
 app.use(cors());
 
 //connect dabatabase
-connectDb;
+connectDb();
 
 app.use(express.json());
 // making the api
