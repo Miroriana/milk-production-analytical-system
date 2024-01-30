@@ -1,4 +1,4 @@
-const Locations = require("../database/locations.json");
+const Locations = require("../db/locations.json");
 
 const asyncWrapper = (fn) => {
   return async (req, res, next) => {

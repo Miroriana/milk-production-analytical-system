@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const { connectDb } = require("./db/dbConnection");
+const { connectDb } = require("./src/db/dbConnection");
 const {
   farmerRoutes,
   allRoutes,
@@ -10,15 +10,15 @@ const {
   mccRouters,
   mccUserRouters,
   milkProductionRouters,
-} = require("./routes/index");
+} = require("./src/routes/index");
 require("colors");
 const app = express();
 const swaggerui = require("swagger-ui-express");
 const swaggerjsdocs = require("swagger-jsdoc");
 const {
   globalErrorController,
-} = require("./controller/Errors/errorController");
-const { errorHandler } = require("./utility/errorHandlerClass");
+} = require("./src/controller/Errors/errorController");
+const { errorHandler } = require("./src/utility/errorHandlerClass");
 
 app.use(cors());
 

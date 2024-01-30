@@ -6,7 +6,7 @@ const {
   userAccountSignUpValidationSchema,
   userAccountSignInValidationSchema,
 } = require("../utils/validations/validateUserAccount");
-const CustomError = require("../errors");
+const CustomError = require("../errors/customError");
 const { default: statusCodes } = require("http-status-codes");
 const { v4: uuidv4 } = require("uuid");
 const { getToken } = require("../utility/webTokenValidation");

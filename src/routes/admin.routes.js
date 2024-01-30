@@ -171,7 +171,7 @@
  */
 
 const express = require("express");
-const { verifyToken } = require("../middlewares/tokenVerification");
+const { verifyToken } = require("../../src/middlewares/tokenVerification");
 const {
   addVeterian,
   removeVeterinary,
